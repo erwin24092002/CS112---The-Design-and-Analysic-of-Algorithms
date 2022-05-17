@@ -53,7 +53,7 @@ void Graph::coloring()
 	ll n = size(idx);
 	sol.resize(n, -1);
 	opt_sol.resize(n, -1);
-	for (ll c = 0; c <= n; c++)
+	for (ll c = 0; c < n; c++)
 	{
 		sol[degree[0].first] = c;
 		for (ll i = 1; i < n; i++)
