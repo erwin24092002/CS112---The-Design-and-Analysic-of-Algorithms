@@ -43,10 +43,15 @@ public:
 		time_in.resize(n + 1);
 		time_out.resize(n + 1);
 	}
-	void add(ll u, ll v)
+	void input()
 	{
-		adj_list[u].push_back(v);
-		adj_list[v].push_back(u);
+		for (ll i = 1; i < n; i++)
+		{
+			ll u, v;
+			cin >> u >> v;
+			adj_list[u].push_back(v);
+			adj_list[v].push_back(u);
+		}
 	}
 	void dfs(ll v, ll prev_v, ll depth)
 	{
@@ -88,12 +93,7 @@ int main()
 	ll n, q;
 	cin >> n >> q;
 	Graph gr(n);
-	for (ll i = 1; i < n; i++)
-	{
-		ll u, v;
-		cin >> u >> v;
-		gr.add(u, v);
-	}
+	gr.input();
 	gr.dfs(1, 1, 0);
 
 	while (q--)
