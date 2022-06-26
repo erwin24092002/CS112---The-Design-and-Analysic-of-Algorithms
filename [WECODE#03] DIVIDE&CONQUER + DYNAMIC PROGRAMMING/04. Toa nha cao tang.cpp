@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -7,7 +7,12 @@ typedef long double ld;
 typedef pair<ll, ll> pll;
 
 /*
-* BRUTE FORCE:
+*	BRUTE FORCE:
+	hist là bảng phân phối độ cao, hist[i] là độ cao của tòa nhà tại tọa độ i trên Ox
+	Theo đề thì những điểm điểm nút sẽ tại vị trí:
+	1. (i+1, hist[i+1]) nếu hist[i]<hist[i+1]
+	2. (i, hist[i+1]) nếu hist[i]>hist[i+1]
+
 */
 
 struct buiding
