@@ -11,7 +11,7 @@ typedef pair<ll, ll> pll;
 	Chọn một phần tử a[p], và chia mảng ra thành hai phần,
 phần 1 gồm những phần tử nhỏ hơn a[p] và phần 2 gồm những phần tử lớn hơn hoặc bằng a[p]
 	- Nếu k nhỏ hơn kích thước phần 2, tiến hành tìm phần tử lớn thứ k trong phần 2
-	- Nếu k lớn hơn kích thước phần 2, tiến hành tìm phần tử lớn thứ k-size(part2)+1 trên phần 1
+	- Nếu k lớn hơn kích thước phần 2, tiến hành tìm phần tử lớn thứ k-size(part2)-1 trên phần 1
 	- Nếu k == size(part2+1) => ans = a[p]
 */
 
